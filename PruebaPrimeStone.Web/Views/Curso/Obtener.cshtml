@@ -1,0 +1,39 @@
+﻿@model List<PruebaPrimeStone.Web.Models.CursoModel>
+
+@{
+    ViewData["Title"] = "Obtener Cursos";
+}
+<h1>@ViewData["Title"]</h1>
+<hr />
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>IDCurso</th>
+            <th>Nombre</th>
+            <th>Tiempo</th>
+            <th>Fecha inicio</th>
+            <th>Fecha fin</th>
+        </tr>
+        @foreach (var curso in Model)
+        {
+            <tr>
+                <td>@curso.IdCurso</td>
+                <td>@curso.Nombre</td>
+                <td>@curso.Tiempo</td>
+                <td>@curso.FechaInicio.ToString("dd/MM/yyyy")</td>
+                <td>@curso.FechaFin.ToString("dd/MM/yyyy")</td>
+
+                <td>
+                    <a href="~/curso/editar/@curso.IdCurso" class="btn btn-warning">Editar</a>
+                    <a href="~/curso/eliminar/@curso.IdCurso" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+
+        }
+
+    </table>
+    <div class="text-right">
+        <a href="~/curso/nuevo" class="btn btn-primary">Nuevo</a>
+    </div>
+
+</div>

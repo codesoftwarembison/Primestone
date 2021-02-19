@@ -1,0 +1,32 @@
+﻿@model List<PruebaPrimeStone.Web.Models.DireccionesModel>
+
+@{
+    ViewData["Title"] = "Obtener Direcciones";
+}
+<h1>@ViewData["Title"]</h1>
+<hr />
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>IDDirecciones</th>
+            <th>Nombre</th>
+        </tr>
+        @foreach (var direcciones in Model)
+        {
+            <tr>
+                <td>@direcciones.IdDireccion</td>
+                <td>@direcciones.Nombre</td>
+                <td>
+                    <a href="~/direcciones/editar/@direcciones.IdDireccion" class="btn btn-warning">Editar</a>
+                    <a href="~/direcciones/eliminar/@direcciones.IdDireccion" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+
+        }
+
+    </table>
+    <div class="text-right">
+        <a href="~/direcciones/nuevo" class="btn btn-primary">Nuevo</a>
+    </div>
+
+</div>

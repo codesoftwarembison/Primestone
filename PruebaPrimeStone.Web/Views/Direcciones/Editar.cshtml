@@ -1,0 +1,23 @@
+﻿@model PruebaPrimeStone.Web.Models.DireccionesModel
+@{
+    ViewData["Title"] = "Editar Direcciones";
+}
+<h1>@ViewData["Title"]</h1>
+<hr />
+
+<div class="row">
+
+    @using (Html.BeginForm("Editar", "Direcciones", FormMethod.Post))
+    {
+        @Html.HiddenFor(m => m.IdDireccion)
+        @Html.LabelFor(m => m.Nombre)
+        @Html.TextBoxFor(m => m.Nombre, null, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Nombre, null, new { @class = "red" })
+
+        <hr />
+        <div>
+            <input type="submit" class="btn btn-success" value="Guardar" />
+        </div>
+    }
+
+</div>
