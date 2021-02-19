@@ -1,6 +1,6 @@
 ##PrimeStone
 
-**Aplicación web** desarrollada sobre **.Net core** el cual es un crud de estudiantes, cursos y direcciónes. 
+**Aplicación web** desarrollada sobre **.Net core**, es un aplicativo crud de estudiantes, cursos y direcciones, fué trabajada sobre una arquitectura DAO N capas, contiene log y IHostedService y se utilizaron buenas practicas de programación. 
 ## Contenido del proyecto
 ![Captura0](https://user-images.githubusercontent.com/33797747/108499308-17753300-727c-11eb-8289-a416ee723e8a.PNG)
 ## Manejo del proyecto
