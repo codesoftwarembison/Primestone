@@ -1,6 +1,6 @@
 ## CRUD ESTUDIANTES
 
-**WEB SITE** construido sobre **.Net core**, un aplicativo crud de estudiantes, cursos y direcciones, fué trabajada sobre una arquitectura **DAO, arquitectura en capas**, contiene manejo de **LOG**, tambien se implementa **IHostedService** y se utilizaron principios **SOLID**. 
+**WEB SITE MVC5** construido sobre **.Net core**, un aplicativo crud de estudiantes, cursos y direcciones, fué trabajada sobre una arquitectura **DAO, arquitectura en capas**, contiene manejo de **LOG**, tambien se implementa **IHostedService** y se utilizaron principios **SOLID**. 
 
 ## Contenido del proyecto
 ![Captura0](https://user-images.githubusercontent.com/33797747/108499308-17753300-727c-11eb-8289-a416ee723e8a.PNG)
